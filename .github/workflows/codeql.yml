@@ -20,7 +20,9 @@ on:
     - cron: '27 14 * * 4'
     
 env:
-  CODEQL_EXTRACTOR_CSHARP_OPTION_BUILDLESS: true    
+  CODEQL_EXTRACTOR_CSHARP_OPTION_BUILDLESS: true
+  #To extract source files generated from ASP.NET Core .cshtml files. Will default to true with v2.16.2
+  CODEQL_EXTRACTOR_CSHARP_STANDALONE_EXTRACT_WEB_VIEWS: true
 
 jobs:
   analyze:
