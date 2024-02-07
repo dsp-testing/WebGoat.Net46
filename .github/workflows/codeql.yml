@@ -18,6 +18,7 @@ on:
     branches: [ "master" ]
   schedule:
     - cron: '27 14 * * 4'
+  workflow_dispatch:
     
 env:
   CODEQL_EXTRACTOR_CSHARP_OPTION_BUILDLESS: true
